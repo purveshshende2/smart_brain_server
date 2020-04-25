@@ -1,7 +1,7 @@
  const Clarifai = require ('clarifai');
  //clarifai api
 const app = new Clarifai.App({
-    apiKey: 'cd1812464c4241089f7bf1d232443683'
+    apiKey: ''
    });
 const handleApiCall = (req,res) => {
     app.models.predict(Clarifai.FACE_DETECT_MODEL,req.body.input)
